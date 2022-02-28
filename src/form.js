@@ -18,13 +18,13 @@ class FormC extends React.Component {
     this.setState({
       [e.target.name]: e.target.value,
     });
-    console.log(this);
+    // console.log(this);
   };
 
   handleClick = (e) => {
     e.preventDefault();
     const { name, department, rating } = this.state;
-    console.log(name, department, rating);
+    // console.log(name, department, rating);
     const obj = {
       n: name,
       depart: department,
@@ -41,12 +41,11 @@ class FormC extends React.Component {
       this.changeState();
     }
 
-    console.log(this.state);
-    console.log(this.state.employee.length);
+    // console.log(this.state);
+    // console.log(this.state.employee.length);
   };
 
   changeState = () => {
-    console.log(this.state);
     this.setState({
       contentForm: this.state.contentForm ? false : true,
       btnTxt: this.state.contentForm ? "Go Back" : "Submit",
@@ -54,7 +53,6 @@ class FormC extends React.Component {
         ? "Employee Feedback Data"
         : "Employee Feedback form",
     });
-    console.log(this.state);
   };
 
   render() {
