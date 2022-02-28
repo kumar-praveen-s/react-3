@@ -1,13 +1,88 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.form-container {
+  height: 250px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 400px;
+}
+
+/* label {
+  padding: 20px;
+} */
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.para-style {
+  padding: 30px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  width: 200px;
+  height: 35px;
+}
+
+.btn-style {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  width: 100px;
+  background-color: cornsilk;
+}
+
+.form-value-container {
+  width: 90%;
+  margin: 50px 5%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: cadetblue;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form-value-box {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px inset orangered;
+  border-radius: 20px;
+}
+
+.h1-style {
+  font-size: 20px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .form-value-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .form-value-box {
+    width: 100%;
+  }
 }
