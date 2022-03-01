@@ -30,6 +30,7 @@ class FormC extends React.Component {
       depart: department,
       rate: rating,
     };
+    // console.log(this.state.contentForm);
     if (this.state.contentForm) {
       const Arr = this.state.employee;
       Arr.push(obj);
@@ -40,7 +41,7 @@ class FormC extends React.Component {
     } else {
       this.changeState();
     }
-
+    // console.log(this.state.contentForm);
     // console.log(this.state);
     // console.log(this.state.employee.length);
   };
