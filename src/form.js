@@ -100,11 +100,7 @@ class FormC extends React.Component {
         )}
         {!this.state.contentForm && <Fvalue employee={this.state.employee} />}
         <p className="para-style">
-          <button
-            type="submit"
-            onClick={this.handleClick}
-            className="btn-style"
-          >
+          <button onClick={this.handleClick} className="btn-style">
             {this.state.btnTxt}
           </button>
         </p>
